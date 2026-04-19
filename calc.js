@@ -386,12 +386,12 @@ function closeModal(id){document.getElementById(id).classList.remove('open');doc
 function handleOverlay(e,id){if(e.target===document.getElementById(id))closeModal(id);}
 function expressInterest(){
 const sub=encodeURIComponent('[SmartQuote Full Version] Interest Registration');
-const body=encodeURIComponent(`Hi Lanny,\n\nI am using SmartQuote Freight Beta and I am interested in the Full Version.\n\nMy use case:\n[Please describe your typical shipments, Incoterms you use, team size]\n\nWould I pay for the Full Version?\n[ ] Yes — happy to pay\n[ ] Yes — if under a certain price\n[ ] Not sure yet\n[ ] Prefer free / donation\n\nContact:\nName: \nCompany: \nEmail: \n\n---\nSent from SmartQuote Freight Beta | PHforge`);
+const body=encodeURIComponent(`Hi ,\n\nI am using SmartQuote Freight Beta and I am interested in the Full Version.\n\nMy use case:\n[Please describe your typical shipments, Incoterms you use, team size]\n\nWould I pay for the Full Version?\n[ ] Yes — happy to pay\n[ ] Yes — if under a certain price\n[ ] Not sure yet\n[ ] Prefer free / donation\n\nContact:\nName: \nCompany: \nEmail: \n\n---\nSent from SmartQuote Freight Beta | PHforge`);
 window.location.href=`mailto:P.Han@PHforge.co?subject=${sub}&body=${body}`;
 }
 function sendFeedback(){
 const sub=encodeURIComponent('[SmartQuote Beta] Feedback');
-const body=encodeURIComponent(`Hi Lanny,\n\nFeedback on SmartQuote Freight Beta:\n\n[Your feedback here]\n\n---\nSent from SmartQuote Freight Beta | PHforge`);
+const body=encodeURIComponent(`Hi ,\n\nFeedback on SmartQuote Freight Beta:\n\n[Your feedback here]\n\n---\nSent from SmartQuote Freight Beta | PHforge`);
 window.location.href=`mailto:P.Han@PHforge.co?subject=${sub}&body=${body}`;
 }
 function clearAll(){
